@@ -13,6 +13,9 @@ struct bitbinderApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
+            Joke.self,
+            SetList.self,
+            Recording.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
